@@ -1,3 +1,7 @@
+document.addEventListener("DOMContentLoaded", function () {
+    openTab('bsd'); // Set the default tab
+});
+
 function openTab(tabName) {
     var i, tabContent;
 
