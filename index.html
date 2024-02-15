@@ -1,133 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brix Licensing Portal</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        header {
-            background-color: #100A74;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-            margin: 0;
-        }
-
-        .tabs {
-            display: flex;
-            justify-content: space-around;
-            background-color: #007bff;
-            padding: 10px;
-        }
-
-        .tab {
-            color: #fff;
-            text-decoration: none;
-            padding: 10px;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .tab:hover {
-            background-color: #100A74;
-        }
-
-        section {
-            max-width: 800px;
-            margin: 20px auto;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            display: none;
-        }
-
-        section.active {
-            display: block;
-        }
-
-        h2 {
-            color: #100A74;
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 10px;
-            border-radius: 8px;
-        }
-
-        a {
-            display: block;
-            text-align: center;
-            background-color: #007bff;
-            color: #fff;
-            text-decoration: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            margin-top: 10px;
-            transition: background-color 0.3s ease;
-        }
-
-        a:hover {
-            background-color: #100A74;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <title>Brix by Copper IE</title>
 </head>
+
 <body>
-    <header>
-        <h1>Brix by Copper IE</h1>
-    </header>
+    <div class="tabs">
+        <button class="tab-btn" onclick="openTab('bsd')">BSD</button>
+        <button class="tab-btn" onclick="openTab('greenhill')">Greenhill</button>
+    </div>
 
-    <nav class="tabs">
-        <a href="#" class="tab" onclick="showTab('bsd')">BSD</a>
-        <a href="#" class="tab" onclick="showTab('greenhill')">Greenhill</a>
-        <a href="#" class="tab" onclick="showTab('partners')">Partners</a>
-    </nav>
-    
-    <section id="bsd" class="active">
-        <h2>BSD POS</h2>
-        <img src="product1.jpg" alt="Picture of BSD POS">
-        <a href="BSD_POS.rbxm" download>Download</a>
-    </section>
-    
-    <section id="greenhill">
-        <h2>Base Store Pack</h2>
-        <a href="product2_download_link" download>Download</a>
-    </section>
-    
-    <section id="partners">
-        <h2>Product 3</h2>
-        <img src="product3.jpg" alt="Product 3">
-        <a href="product3_download_link" download>Download</a>
-    </section>
-    
-    <!-- Add more products with their images and download links here -->
-    
-    <script>
-        function showTab(tabId) {
-            const tabs = document.querySelectorAll('.tab');
-            tabs.forEach(tab => tab.classList.remove('active'));
+    <div id="bsd" class="tab-content">
+        <h2>BSD FILES</h2>
+        <p>BSD Point of Sale | 200 R$</p>
+        <a href="downloads/BSD_POS.zip" download><button class="download-btn">Download</button></a>
+    </div>
 
-            const sections = document.querySelectorAll('section');
-            sections.forEach(section => section.classList.remove('active'));
+    <div id="greenhill" class="tab-content">
+        <h2>Greenhill FILES</h2>
+        <!-- Add content for Greenhill tab here -->
+    </div>
 
-            const selectedTab = document.querySelector(`.${tabId}`);
-            const selectedSection = document.getElementById(tabId);
-
-            selectedTab.classList.add('active');
-            selectedSection.classList.add('active');
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
+
 </html>
