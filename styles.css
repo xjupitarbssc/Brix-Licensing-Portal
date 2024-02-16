@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #111; /* Dark blue background */
+    color: white; /* Set text color to white */
 }
 
 .tabs {
@@ -41,6 +42,7 @@ body {
     border-radius: 10px;
     margin: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    color: white; /* Set text color to white */
 }
 
 .product:hover {
