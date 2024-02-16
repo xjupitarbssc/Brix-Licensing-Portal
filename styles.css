@@ -28,12 +28,23 @@ body {
 }
 
 .tab-content {
-    display: none;
-    padding: 20px;
-    background-color: #001f3f; /* Dark blue content background */
+    display: flex;
+    flex-wrap: wrap;
     margin-top: 10px;
+    justify-content: space-around;
+}
+
+.product {
+    width: 150px; /* Adjust the width as needed */
+    height: 150px; /* Same as width for a square shape */
+    background-color: #001f3f; /* Dark blue product background */
     border-radius: 10px;
+    margin: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
+}
+
+.product:hover {
+    background-color: #003366; /* Slightly lighter blue on hover */
 }
 
 .download-btn {
