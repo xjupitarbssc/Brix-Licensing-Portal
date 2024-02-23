@@ -1,39 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Brix by Copper IE</title>
-</head>
-
-<body>
-    <div class="tabs">
-        <button class="tab-btn" onclick="openTab('bsd')">BSD</button>
-        <button class="tab-btn" onclick="openTab('greenhill')">Greenhill</button>
-    </div>
-
 <div id="bsd" class="tab-content">
     <h2>BSD FILES</h2>
 
     <div class="product">
-        <p>AutoBlox Doors | 50 R$</p>
-        <button class="download-btn unavailable-btn" disabled>Unavailable to download</button>
+        <div class="product-info">
+            <p class="product-title">BSD Point of Sale</p>
+            <p class="product-price">200 R$</p>
+        </div>
+        <div class="product-image">
+            <!-- Add an image source here if available -->
+        </div>
+        <button class="download-btn" onclick="confirmDownload('BSD_POS.rbxm')">Download</button>
     </div>
 
+    <h2>Additional Products:</h2>
     <div class="product">
-        <p>BSD Point of Sale | 200 R$</p>
-        <a href="BSD_POS.rbxm" download><button class="download-btn">Download</button></a>
+        <div class="product-info">
+            <p class="product-title">AutoBlox Doors</p>
+            <p class="product-price">50 R$</p>
+        </div>
+        <div class="product-image">
+            <!-- Add an image source here if available -->
+        </div>
+        <button class="download-btn unavailable-btn" disabled onclick="unavailableDownload()">Unavailable to download</button>
     </div>
 </div>
 
-    <div id="greenhill" class="tab-content">
-        <h2>Greenhill FILES</h2>
-        <!-- Add content for Greenhill tab here -->
-    </div>
-
-    <script src="script.js"></script>
-</body>
-
-</html>
+<script src="script.js"></script>
