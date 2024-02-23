@@ -1,65 +1,39 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #111; /* Dark blue background */
-    color: white; /* Set text color to white */
-}
+<!DOCTYPE html>
+<html lang="en">
 
-.tabs {
-    background-color: #333;
-    display: flex;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Brix by Copper IE</title>
+</head>
 
-.tab-btn {
-    padding: 15px;
-    font-size: 16px;
-    color: white;
-    border: none;
-    cursor: pointer;
-    flex: 1;
-    background-color: #001f3f; /* Dark blue tab color */
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow effect */
-    transition: background-color 0.3s ease;
-}
+<body>
+    <div class="tabs">
+        <button class="tab-btn" onclick="openTab('bsd')">BSD</button>
+        <button class="tab-btn" onclick="openTab('greenhill')">Greenhill</button>
+    </div>
 
-.tab-btn:hover {
-    background-color: #003366; /* Slightly lighter blue on hover */
-}
+<div id="bsd" class="tab-content">
+    <h2>BSD FILES</h2>
 
-.tab-content {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 10px;
-    justify-content: space-around;
-}
+    <div class="product">
+        <p>AutoBlox Doors | 50 R$</p>
+        <button class="download-btn unavailable-btn" disabled>Unavailable to download</button>
+    </div>
 
-.product {
-    width: 150px; /* Adjust the width as needed */
-    height: 150px; /* Same as width for a square shape */
-    background-color: #001f3f; /* Dark blue product background */
-    border-radius: 10px;
-    margin: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
-    color: white; /* Set text color to white */
-}
+    <div class="product">
+        <p>BSD Point of Sale | 200 R$</p>
+        <a href="BSD_POS.rbxm" download><button class="download-btn">Download</button></a>
+    </div>
+</div>
 
-.product:hover {
-    background-color: #003366; /* Slightly lighter blue on hover */
-}
+    <div id="greenhill" class="tab-content">
+        <h2>Greenhill FILES</h2>
+        <!-- Add content for Greenhill tab here -->
+    </div>
 
-.download-btn {
-    padding: 10px;
-    background-color: #4CAF50; /* Green download button */
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow effect */
-    transition: background-color 0.3s ease;
-}
+    <script src="script.js"></script>
+</body>
 
-.download-btn:hover {
-    background-color: #45a049; /* Slightly darker green on hover */
-}
+</html>
