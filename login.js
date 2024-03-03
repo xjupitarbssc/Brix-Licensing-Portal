@@ -19,7 +19,7 @@ function getDiscordUserId(accessToken) {
         // Now, integrate the Bloxlink API to resolve Roblox ID
         fetch(`https://api.blox.link/v4/public/guilds/YOUR_SERVER_ID/discord-to-roblox/${userId}`, {
             headers: {
-                Authorization: 'YOUR_BLOXLINK_API_KEY',
+                Authorization: '16335e47-ff30-4799-bcb6-e08606845819',
             },
         })
         .then((response) => response.json())
